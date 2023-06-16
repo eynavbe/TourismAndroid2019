@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/fragment_tour_re"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context=".TourRecyclerviewFragment"
+    android:orientation="vertical">
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:id="@+id/tablayout_id"
+        app:tabTextColor="@android:color/black"
+        app:tabIndicatorColor="@android:color/black"
+        android:background="@color/colorPrimary">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiInformation"
+
+            android:text="מידע"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiMap"
+
+            android:text="מפה"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayoutTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<com.google.android.material.appbar.AppBarLayout-->
+    <!--android:id="@+id/appbarlayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@android:color/white"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+
+    <!--<com.google.android.material.appbar.CollapsingToolbarLayout-->
+        <!--android:id="@+id/collapsing_toolbar_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--app:contentScrim="?attr/colorPrimary"-->
+        <!--app:expandedTitleMarginEnd="64dp"-->
+        <!--app:expandedTitleMarginStart="48dp"-->
+        <!--app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/image"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="230dp"-->
+            <!--android:contentDescription="@null"-->
+            <!--android:fitsSystemWindows="true"-->
+            <!--android:minHeight="100dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--app:layout_collapseMode="parallax"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView4" />-->
+
+
+
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+        <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/vColor"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="55dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/tvInformation" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvWeather"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--app:layout_constraintLeft_toRightOf="@+id/ivIconWeather"-->
+                <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--<com.borjabravo.readmoretextview.ReadMoreTextView-->
+                <!--android:id="@+id/tvInformation"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:text="מידע על העיר"-->
+                <!--android:textAlignment="center"-->
+                <!--app:colorClickableText="@android:color/holo_blue_light"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/tvWeather"-->
+                <!--app:trimCollapsedText="להראות פחות"-->
+                <!--app:trimExpandedText="להראות יותר"-->
+                <!--app:trimLength="300"-->
+                <!--app:trimMode="trimModeLength" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvNameCity"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginEnd="16dp"-->
+                <!--android:text="שם עיר"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--app:layout_constraintRight_toRightOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnLocation"-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="מפה"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/vColor" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnFilter"-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:text="סינון"-->
+                <!--app:layout_constraintEnd_toStartOf="@+id/btnSort"-->
+                <!--app:layout_constraintStart_toEndOf="@+id/btnLocation"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/vColor" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnSort"-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:text="מיין"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/vColor" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/ivIconWeather"-->
+                <!--android:layout_width="36dp"-->
+                <!--android:layout_height="37dp"-->
+                <!--android:src="@drawable/round_corners"-->
+                <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--tools:srcCompat="@android:id/empty" />-->
+        <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+        <!--</ScrollView>-->
+    <!--</com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+<!--</com.google.android.material.appbar.AppBarLayout>-->
+
+    <!--<include layout="@layout/fragment_tour_recyclerview" />-->
+
+    <!--<androidx.viewpager.widget.ViewPager-->
+        <!--android:id="@+id/viewPager_id"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+    <!--</androidx.viewpager.widget.ViewPager>-->
+
+
+</LinearLayout >
