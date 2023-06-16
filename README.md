@@ -86,3 +86,8 @@
 [<img width="400" alt="video_android" src="https://user-images.githubusercontent.com/52885580/154802214-5201f496-13ae-45aa-b11c-3e8fca69538c.png">](https://drive.google.com/open?id=1X80zxE1I9S2U3AOO8jlzwZ0CZFZE3Roe)
 
 
+
+The project was originally uploaded to my github, eynavapp:
+https://github.com/eynavApp/projectAndroid.git
+
+
